@@ -199,7 +199,7 @@ header{
     position: absolute;
     top: 90px;
     font-size: 18px;
-    color: blue;
+    color: var(--first-font-color);
     font-weight: 600;
 }
 
@@ -207,7 +207,7 @@ header{
     position: absolute;
     top: 340px;
     font-size: 18px;
-    color: blue;
+    color: var(--first-font-color);
     font-weight: 600;
 }
 
@@ -215,9 +215,133 @@ header{
     font-size: var(--font-size-m);
     color: var(--second-font-color);
     margin: 0;
-    font-size: xxx-large;
+    font-size: var(--font-size-l);
     padding-left: 32px;
 }
 
+.dashNFL{
+    background: white;
+    margin: 16px;
+    border-radius: 5%;
+}
+
+.NFLtop{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 24px 0px;
+    align-items: center;
+}
+
+#NFL{
+    font-size: var(--font-size-m);
+    color: var(--second-font-color);
+    margin: 0;
+    font-size: var(--font-size-s);      
+   
+}
+
+.progressbar{
+    margin: 0;
+    padding: 0;
+    border: none;
+    width: fit-content;
+}
+
+.NFLbottom{
+    display: flex;
+    justify-content: space-around;
+}
+
+.dashSoC{
+    background: white;
+    margin: 16px;
+    border-radius: 5%;
+}
+
+.SoCtop{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 24px 0px;
+    align-items: center;
+}
+
+
+.SoCbottom{
+    display: flex;
+    justify-content: space-around;
+}
+
+#SoC{
+    font-size: var(--font-size-m);
+    color: var(--second-font-color);
+    margin: 0;
+    font-size: var(--font-size-s);      
+   
+}
+
+.dashNK{
+    background: white;
+    margin: 16px;
+    border-radius: 5%;
+}
+
+.NKtop{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 24px 0px;
+    align-items: center;
+}
+
+
+.NKbottom{
+    display: flex;
+    justify-content: space-around;
+}
+
+#NK{
+    font-size: var(--font-size-m);
+    color: var(--second-font-color);
+    margin: 0;
+    font-size: var(--font-size-s);      
+   
+}
+
+.dashTB{
+    background: white;
+    margin: 16px;
+    border-radius: 5%;
+}
+
+.TBtop{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 24px 0px;
+    align-items: center;
+}
+
+
+.TBbottom{
+    display: flex;
+    justify-content: space-around;
+}
+
+#TB{
+    font-size: var(--font-size-m);
+    color: var(--second-font-color);
+    margin: 0;
+    font-size: var(--font-size-s);      
+   
+}
+
+.footer-links{
+    display: flex;
+    justify-content: space-around;
+    padding: 16px;
+}
+
+.footer-text{
+    font-size: var(--font-size-xs);
+    font-weight: var(--standard-font-weight);
+}
 
 
