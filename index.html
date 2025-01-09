@@ -16,7 +16,7 @@
 <body>
     <header>
         <img src="ADlogo.jpg" alt="accessdatch logo">
-        <a href="" class="ad-logo">AccessDash</a>
+        <a href="" class="ad-logo"> <span style="font-weight: bold;">Access</span>Dash</a>
 
         <div class="hamburger-class">
             <div class="hamburger" onclick="body.classList.toggle('hamburger-open')">
@@ -54,35 +54,57 @@
     </header>
 
         <h2>Dashboard</h2>
-        <h1>Nieuwekijk</h1>
+        <h1 id="dashboardtitle">Nieuwekijk</h1>
         <section>
             <div>
                 <img src="NFLimg.jpg" alt="New Future Lab logo">
                 <h1>New Future Lab</h1>
                 <a href="https://www.newfuturelab.nl/">newfuturelab.nl</a>
                 <p>ontoegankelijk</p>
-                <span>57%</span>
+                <fieldset>
+                    <p>
+                        <label for="meter">Meter</label>
+                        <meter min="10" max="100" low="30" high="80" value="57"></meter>
+                    </p>
+                </fieldset>
             </div>
             <div>
                 <img src="SoCimg.jpg" alt="Shot of Culture logo">
                 <h1>Shot of Culture</h1>
                 <a href="https://shotofculture.nl/">shotofculture.nl</a>
                 <p>nieuwe fouten ontdekt</p>
-                <span>57%</span>
+                <form action="">
+                    <fieldset>
+                        <p>
+                            <label for="meter">Meter</label>
+                            <meter min="10" max="100" low="30" high="80" value="57"></meter>
+                        </p>
+                    </fieldset>
+                </form>
             </div>
             <div>
                 <img src="NieuwekijkImg.jpg" alt="Nieuwekijk logo">
                 <h1>Nieuwekijk</h1>
                 <a href="https://nieuwekijk.nl/">nieuwekijk.nl</a>
                 <p>nieuwe fouten ontdekt</p>
-                <span>100%</span>
+                <fieldset>
+                    <p>
+                        <label for="meter">Meter</label>
+                        <meter min="10" max="100" low="30" high="80" value="100"></meter>
+                    </p>
+                </fieldset>
             </div>
             <div>
                 <img src="TheBinImg.png" alt="The Bin logo">
                 <h1>The Bin</h1>
                 <a href="https://www.thebin.nl/">thebin.nl</a>
                 <p>toegankelijk</p>
-                <span>100%</span>
+                <fieldset>
+                    <p>
+                        <label for="meter">Meter</label>
+                        <meter min="10" max="100" low="30" high="80" value="100"></meter>
+                    </p>
+                </fieldset>
             </div>
         </section>
 </body>
