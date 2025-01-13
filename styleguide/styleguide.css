@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    column-count: 1;
+}
+
+body{
+
+    --main-font: "Outfit";
+    
+    --first-font-color: #0257ff;
+    --second-font-color: #5D666A;
+    --third-font-color: #87929F;
+    --background-gray: #F0F0F0;
+    --state-green: #00C858;
+    --state-info: #0257FF;
+    --state-warning: #FF9800;
+    --state-error: #FF3819;
+
+
+    /* font-size-headings */
+    --font-size-xxl: 96px;
+    --font-size-xl: 64px;
+    --font-size-l: 48px;
+    --font-size-m: 32px;
+    --font-size-s: 24px;
+    --font-size-xs: 16px;
+
+    /* font-weight */
+    --light-font-weight: 200;
+    --standard-font-weight: 400;
+    --semibold-font-weight: 500;
+    --bold-font-weight: 600; 
+
+    font-family: "Outfit";
+    margin: 0;
+}
+
+header{
+    background-color: var(--background-gray);
+    padding: 32px;
+}
+
+h2{
+    padding: 32px;
+}
+
+p{
+    padding-left: 32px;
+    padding-top: 16px;
+}
+
+.Colors{
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 32px;
+    gap: 16px;
+}
+
+.Primary{
+    width: 150px;
+    height: 200px;
+    background: var(--first-font-color);
+    border-radius: 5%;
+}
+
+.Secondary{
+    width: 150px;
+    height: 200px;
+    background: var(--second-font-color);
+    border-radius: 5%;
+}
+
+.Colors-text{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.Gray1{
+    width: 150px;
+    height: 200px;
+    background: var(--background-gray);
+    border-radius: 5%;
+    margin-left: 32px;
+}
+
+.Gray2{
+    width: 150px;
+    height: 200px;
+    background: var(--third-font-color);
+    border-radius: 5%;
+    margin-left: 32px;
+    margin-top: 16px;
+}
+
+.Success{
+    width: 150px;
+    height: 200px;
+    background: var(--state-green);
+    border-radius: 5%;
+    margin-left: 32px;
+    margin-top: 16px;
+}
+
+.Info{
+    width: 150px;
+    height: 200px;
+    background: var(--state-info);
+    border-radius: 5%;
+    margin-left: 16px;
+    margin-top: 16px;
+}
+
+.Warning{
+    width: 150px;
+    height: 200px;
+    background: var(--state-warning);
+    border-radius: 5%;
+    margin-left: 32px;
+    margin-top: 16px;
+}
+
+.Error{
+    width: 150px;
+    height: 200px;
+    background: var(--state-error);
+    border-radius: 5%;
+    margin-left: 16px;
+    margin-top: 16px;
+}
+
+.State-colors-top{
+    display: flex;
+}
+
+.State-text-top{
+    display: flex;
+}
+
+.State-colors-bottom{
+    display: flex;
+}
+
+.State-text-bottom{
+    display: flex;
+}
+
+/*
+.Column-names{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    padding-bottom: 16px;
+}
+*/
+
+.Type{
+    list-style-type: none;
+}
+
+.Size{
+    list-style-type: none;
+}
+
+.Line-height{
+    list-style-type: none;
+}
+
+.List{
+    column-count: 3;
+    padding: 32px;
+    width: 320px;
+}

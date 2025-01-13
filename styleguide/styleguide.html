@@ -4,6 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Styleguide</title>
+
+    <link rel="stylesheet" href="styleguide.css">
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <header>
@@ -11,10 +19,14 @@
     </header>
 
     <h2>Colors</h2>
-    <div class="Primary"></div>
-    <div class="Secondary"></div>
-    <p>Primary / #0257FF</p>
-    <p>Secondary / #5D666A</p>
+    <section class="Colors">
+        <div class="Primary"></div>
+        <div class="Secondary"></div>
+    </section>
+    <div class="Colors-text">
+        <p>Primary / #0257FF</p>
+        <p>Secondary / #5D666A</p>
+    </div>
 
     <h2>Gray colors</h2>
     <div class="Gray1"></div>
@@ -23,64 +35,111 @@
     <p>Gray 2 / #87929F</p>
 
     <h2>State colors</h2>
-    <div class="Success"></div>
-    <div class="Info"></div>
-    <div class="Warning"></div>
-    <div class="Error"></div>
-    <p>Success / #00C858</p>
-    <p>Info / #0257FF</p>
-    <p>Warning / #FF9800</p>
-    <p>Error / #FF3819</p>
+    <section class="State-colors-top">
+        <div class="Success"></div>
+        <div class="Info"></div>
+    </section>
+        <div class="State-text-top">
+            <p>Success / #00C858</p>
+            <p>Info / #0257FF</p>
+        </div>
+    <section class="State-colors-bottom">
+        <div class="Warning"></div>
+        <div class="Error"></div>
+    </section>
+        <div class="State-text-top"> 
+            <p>Warning / #FF9800</p>
+            <p>Error / #FF3819</p>
+        </div>   
 
     <h2>Typography</h2>
-    <ul>
-        <li>Type</li>
-        <li>Size</li>
-        <li>Line Height</li>
-    </ul>
 
-    <ul>
-        <li>Heading 1</li>
-        <li>46px</li>
-        <li>135%</li>
-    </ul>
+    <!--
+    <section class="List">
+        <ul class="Column-names">
+            <li>Type</li>
+            <li>Size</li>
+            <li>Line Height</li>
+        </ul>
 
-    <ul>
-        <li>Heading 2</li>
-        <li>32px</li>
-        <li>135%</li>
-    </ul>
+        <ul>
+            <li>Heading 1</li>
+            <li>46px</li>
+            <li>135%</li>
+        </ul>
 
-    <ul>
-        <li>Heading 3</li>
-        <li>26px</li>
-        <li>135%</li>
-    </ul>   
+        <ul>
+            <li>Heading 2</li>
+            <li>32px</li>
+            <li>135%</li>
+        </ul>
 
-    <ul>
-        <li>Heading 4</li>
-        <li>20px</li>
-        <li>135%</li>
-    </ul>
+        <ul>
+            <li>Heading 3</li>
+            <li>26px</li>
+            <li>135%</li>
+        </ul>   
 
-    <ul>
-        <li>Normal text</li>
-        <li>16px</li>
-        <li>135%</li>
-    </ul>
+        <ul>
+            <li>Heading 4</li>
+            <li>20px</li>
+            <li>135%</li>
+        </ul>
 
-    <ul> 
-        <li>Small text</li>
-        <li>14px</li>
-        <li>135%</li>
-    </ul>
+        <ul>
+            <li>Normal text</li>
+            <li>16px</li>
+            <li>135%</li>
+        </ul>
 
-    <ul>
-        <li>Label text</li>
-        <li>12px</li>
-        <li>16.5px</li>
-    </ul>
+        <ul> 
+            <li>Small text</li>
+            <li>14px</li>
+            <li>135%</li>
+        </ul>
 
+        <ul>
+            <li>Label text</li>
+            <li>12px</li>
+            <li>16.5px</li>
+        </ul>
+    </section>
+    -->
+
+    <section class="List">
+        <ul class="Type">
+            <li>Type</li>
+            <li>Heading 1</li>
+            <li>Heading 2</li>
+            <li>Heading 3</li>
+            <li>Heading 4</li>
+            <li>Normal text </li>
+            <li>Small text</li>
+            <li>Label text</li>
+        </ul>
+
+        <ul class="Size">
+            <li>Size</li>
+            <li>46px</li>
+            <li>32px</li>
+            <li>26px</li>
+            <li>20px</li>
+            <li>16px</li>
+            <li>14px</li>
+            <li>12px</li>
+        </ul>
+
+        <ul class="Line-height">
+            <li>Line height</li>
+            <li>135%</li>
+            <li>135%</li>
+            <li>135%</li>
+            <li>135%</li>
+            <li>135%</li>
+            <li>135%</li>
+            <li>16.5px</li>
+        </ul>
+    </section>
 
     
 </body>

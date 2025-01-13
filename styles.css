@@ -26,6 +26,11 @@ body{
     --semibold-font-weight: 500;
     --bold-font-weight: 600; 
 
+    /*progressbar*/
+    --value57: 57;
+    --value100: 100;
+    --breedte: 300px;
+    --dikte-rand: 1em;
 
     margin: 0;
     background-color: rgb(241, 241, 241);
@@ -51,8 +56,6 @@ nav {
     border-left: solid 3px #0257ff;
 }
 
-
-
 .hamburger-class {
 margin-right: 16px; }     
 
@@ -64,7 +67,7 @@ height: 32px;
 cursor: pointer; 
 margin-left: auto; }
 
-@media all and (min-width: 900px) { 
+@media all and (min-width: 500px) { 
 
 .hamburger, .hamburger-class {
     display: none; }
@@ -186,6 +189,43 @@ header{
     z-index: 100;
 }
 
+meter{
+    aspect-ratio: 1;
+    height: auto;
+    border-radius: 50%;
+    background-image: conic-gradient(var(--first-font-color) 
+                        calc(var(--value, 50) * 3.6deg), 
+                            var(--achtergrond, #CCE3FF) 0);
+    mask-image: radial-gradient(closest-side, transparent 30px, black 0);
+    
+
+    /*Verbergen van de default styling van de browsers*/
+    &::-webkit-meter-bar{
+        display: none;
+    }
+    
+    &::-moz-meter-bar {
+        background: none;
+      }
+}
+
+.button{
+    margin: 0;
+    padding: 0;
+   
+}
+
+.check-state{
+    display: flex;
+    justify-content: center;
+
+}
+
+.logo{
+    display: flex;
+    gap: 64px;
+}
+
 .ad-logo{
     color: var(--first-font-color);
     display: flex;
@@ -219,16 +259,23 @@ header{
     padding-left: 32px;
 }
 
+#NFL-link{
+    position: absolute;
+    top: 295px;
+    left: 110px;
+}
+
 .dashNFL{
     background: white;
     margin: 16px;
-    border-radius: 5%;
+    border-radius: 10px;
 }
 
 .NFLtop{
     display: flex;
-    justify-content: space-evenly;
     padding: 24px 0px;
+    padding-left: 16px;
+    gap: 16px;
     align-items: center;
 }
 
@@ -249,26 +296,38 @@ header{
 
 .NFLbottom{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    padding: 0 16px;
+    align-items: center;
 }
 
 .dashSoC{
     background: white;
     margin: 16px;
-    border-radius: 5%;
+    border-radius: 10px;
 }
+
+#SoC-link{
+    position: absolute;
+    top: 530px;
+    left: 110px;
+}
+
 
 .SoCtop{
     display: flex;
-    justify-content: space-evenly;
     padding: 24px 0px;
+    padding-left: 16px;
+    gap: 16px;
     align-items: center;
 }
 
 
 .SoCbottom{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    padding: 0 16px;
+    align-items: center;
 }
 
 #SoC{
@@ -282,20 +341,30 @@ header{
 .dashNK{
     background: white;
     margin: 16px;
-    border-radius: 5%;
+    border-radius: 10px;
 }
+
+#NK-link{
+    position: absolute;
+    top: 765px;
+    left: 110px;
+}
+
 
 .NKtop{
     display: flex;
-    justify-content: space-evenly;
     padding: 24px 0px;
+    padding-left: 16px;
+    gap: 16px;
     align-items: center;
 }
 
 
 .NKbottom{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    padding: 0 16px;
+    align-items: center;
 }
 
 #NK{
@@ -309,20 +378,30 @@ header{
 .dashTB{
     background: white;
     margin: 16px;
-    border-radius: 5%;
+    border-radius: 10px;
 }
+
+#TB-link{
+    position: absolute;
+    top: 1003px;
+    left: 110px;
+}
+
 
 .TBtop{
     display: flex;
-    justify-content: space-evenly;
     padding: 24px 0px;
+    padding-left: 16px;
+    gap: 16px;
     align-items: center;
 }
 
 
 .TBbottom{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    padding: 0 16px;
+    align-items: center;
 }
 
 #TB{
@@ -344,4 +423,61 @@ header{
     font-weight: var(--standard-font-weight);
 }
 
+#ontoegankelijk{
+    margin: 0;
+    display: grid;
+    align-content: center;
+    font-weight: var(--semibold-font-weight);
+    color: #B50000;
+}
 
+.ontoegankelijk-bg{
+    background: #FFDADA;
+    height: 40px;
+    width: 140px;
+    display: flex;
+    align-content: flex-end;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.nieuwe-fouten-bg{
+    background: #FFFAF3;
+    height: 40px;
+    width: 180px;
+    display: flex;
+    align-content: flex-end;
+    justify-content: center;
+    border-radius: 20px;
+    border: solid 1px #FFD08A;
+}
+
+.nieuwe-fouten{
+    margin: 0;
+    display: grid;
+    align-content: center;
+    font-weight: var(--semibold-font-weight);
+    color: var(--second-font-color);
+}
+
+.toegankelijk-bg{
+    background: #BBFFD8;
+    height: 40px;
+    width: 130px;
+    display: flex;
+    align-content: flex-end;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+#toegankelijk{
+    margin: 0;
+    display: grid;
+    align-content: center;
+    font-weight: var(--semibold-font-weight);
+    color: #00883C;
+}
+
+@media all and (min-width: 500px) {
+    
+}
