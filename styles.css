@@ -189,25 +189,56 @@ header{
     z-index: 100;
 }
 
-meter{
-    aspect-ratio: 1;
-    height: auto;
-    border-radius: 50%;
-    background-image: conic-gradient(var(--first-font-color) 
-                        calc(var(--value, 50) * 3.6deg), 
-                            var(--achtergrond, #CCE3FF) 0);
-    mask-image: radial-gradient(closest-side, transparent 30px, black 0);
-    
-
-    /*Verbergen van de default styling van de browsers*/
-    &::-webkit-meter-bar{
+meter {
+	appearance:none;
+	width: 80px;
+	height: 80px;
+  border-radius:50%;
+  mask-image: radial-gradient(closest-side, transparent 28px, black 0);
+	
+    /* weghalen van de standaard browser styling*/
+        &::-webkit-meter-bar {
         display: none;
-    }
-    
-    &::-moz-meter-bar {
+        }
+        &::-moz-meter-bar {
         background: none;
-      }
 }
+	
+	background-color:#CCE3FF;
+	
+	background-image:conic-gradient(
+		
+    #0257ff calc(var(--p) * 1%),
+		transparent 0
+	);
+	
+	animation-name:revealP;
+	animation-duration:.5s;
+	animation-play-state:paused;
+	animation-fill-mode:forwards
+	
+}
+
+meter.is-visible {
+	animation-play-state:running;
+}
+
+@property --p {
+  syntax: "<number>";
+  inherits: false;
+  initial-value: 0;
+}
+
+@keyframes revealP {
+	0% {
+		--p:0;
+	}
+	100% {
+		--p:var(--value);
+	}
+}
+
+
 
 .button{
     margin: 0;
@@ -259,11 +290,7 @@ meter{
     padding-left: 32px;
 }
 
-#NFL-link{
-    position: absolute;
-    top: 295px;
-    left: 110px;
-}
+
 
 .dashNFL{
     background: white;
@@ -273,10 +300,10 @@ meter{
 
 .NFLtop{
     display: flex;
+    flex-direction: column;
     padding: 24px 0px;
-    padding-left: 16px;
-    gap: 16px;
     align-items: center;
+    gap: 8px;
 }
 
 #NFL{
@@ -307,19 +334,12 @@ meter{
     border-radius: 10px;
 }
 
-#SoC-link{
-    position: absolute;
-    top: 530px;
-    left: 110px;
-}
-
-
 .SoCtop{
     display: flex;
+    flex-direction: column;
     padding: 24px 0px;
-    padding-left: 16px;
-    gap: 16px;
     align-items: center;
+    gap: 8px;
 }
 
 
@@ -344,18 +364,11 @@ meter{
     border-radius: 10px;
 }
 
-#NK-link{
-    position: absolute;
-    top: 765px;
-    left: 110px;
-}
-
-
 .NKtop{
     display: flex;
+    flex-direction: column;
     padding: 24px 0px;
-    padding-left: 16px;
-    gap: 16px;
+    gap: 8px;
     align-items: center;
 }
 
@@ -381,18 +394,11 @@ meter{
     border-radius: 10px;
 }
 
-#TB-link{
-    position: absolute;
-    top: 1003px;
-    left: 110px;
-}
-
-
 .TBtop{
     display: flex;
+    flex-direction: column;
     padding: 24px 0px;
-    padding-left: 16px;
-    gap: 16px;
+    gap: 8px;
     align-items: center;
 }
 

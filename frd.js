@@ -12,10 +12,10 @@ function openMenu() {
 
 const sluitButton = document.querySelector(".hamburger-open");
 
-let Button = document.querySelector('meter');
+document.addEventListener("scroll", function() {
+	const meter = document.querySelector("meter");
+	meter.classList.add("is-visible");
+	console.log("scroll")
+}, {once:true});
 
-Button.addEventListener ('click', checkState)
 
-function checkState(){
-  console.log('het werkt')
-}
