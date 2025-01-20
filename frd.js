@@ -1,21 +1,31 @@
+// query the hamburger menu button
 const openButton = document.querySelector(".hamburger");
-
-
+// add click event to the hamburger menu for opening the menu
 openButton.addEventListener("click", openMenu);
 
-
+const deNav = document.querySelector("nav");
 function openMenu() {  
+  deNav.classList.toggle("nav-open"); 
+}
 
-  const deNav = document.querySelector("nav");
+const options = {
+  root: null,
+  rootMargin: "0px",
+  threshold: 0.0,
+};
 
-  deNav.classList.toggle("nav-open"); }
+const observer = new IntersectionObserver(entries => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("is-visible");
+    }
+  });
+}, options);
 
-const sluitButton = document.querySelector(".hamburger-open");
-
-document.addEventListener("scroll", function() {
-	const meter = document.querySelector("meter");
-	meter.classList.add("is-visible");
-	console.log("scroll")
-}, {once:true});
-
-
+/**
+ * schrijf hier ff op wat alles doet
+ */
+const meters = document.querySelectorAll("meter");
+meters.forEach((el) => {
+  observer.observe(el);
+})

@@ -16,7 +16,7 @@
 <body>
     <header>
         <div class="logo">
-            <img src="ADlogo.jpg" alt="accessdatch logo">
+            <img id="ADlogo" src="ADlogo.jpg" alt="accessdatch logo">
             <a href="" class="ad-logo"> <span style="font-weight: bold;">Access</span>Dash</a>
         </div>
 
@@ -33,7 +33,7 @@
 
         <nav>
             <div>
-                <ul>
+                <ul id="dashboard-list">
             <a href="" class="dashboard">Dashboard</a>
                     <li>Dashboard</li>
                     <li>Info</li>
@@ -42,7 +42,7 @@
                 </ul>
             </div>
             <div>
-                <ul>
+                <ul id="nieuwekijk-list">
             <a href="" class="nieuwekijk">Nieuwekijk</a>
                     <li>Home</li>
                     <li>Over ons</li>
@@ -55,110 +55,93 @@
         </nav>
     </header>
 
+    <main>
+
         <h2>Dashboard</h2>
         <h1 id="dashboardtitle">Websites</h1>
         <section>
+
             <article class="dashNFL">
-
-                <div class="NFLtop">
-                    <img style="width: 60px;" src="NFLimg.jpg" alt="New Future Lab logo">
+                <img src="NFLimg.jpg" alt="NFLlogo" id="NFLimg">
+            
+                <div class="article-middle">
                     <h1 id="NFL">New Future Lab</h1>
-                    <a id="NFL-link" href="https://www.newfuturelab.nl/">newfuturelab.nl</a>   
+                    <a id="NFL-link" href="https://www.newfuturelab.nl/">newfuturelab.nl</a> 
+                    <div class="ontoegankelijk-bg">
+                    <p id="ontoegankelijk">ontoegankelijk</p>
+                    </div> 
                 </div>
-                <!--
-                <div class="check-state">
-                    <button>
-                        <p style="margin: 0;">Check state</p>
-                    </button>
+                <div style="width: fit-content;">
+                    <fieldset class="progressbar">
+                        <p>
+                            <meter id="ontoegankelijk-meter" min="10" max="100" value="57" style="--value: 57; --breedte: 300px; --dikte-rand: 1em;"></meter>
+                        </p>
+                    </fieldset>
                 </div>
-                -->
-                <div class="NFLbottom">
-                      
-                            
-                        <div class="ontoegankelijk-bg">
-                            <p id="ontoegankelijk">ontoegankelijk</p>
-                        </div>
-                        <div>
-                            <fieldset class="progressbar">
-                                <p>
-                                    <meter min="10" max="100" value="57" style="--value: 57; --breedte: 300px; --dikte-rand: 1em;"></meter>
-                                </p>
-                            </fieldset>
-                        </div>
-                    </div>
-
+            
             </article>
 
             <article class="dashSoC">
-
-                <div class="SoCtop">
-                    <img style="width: 60px;" src="SoCimg.jpg" alt="Shot of Culture logo">
+                <img id="SoCimg" src="SoCimg.jpg" alt="Shot of Culture logo">
+                <div class="article-middle">
                     <h1 id="SoC">Shot of Culture</h1>
                     <a id="SoC-link" href="https://shotofculture.nl/">shotofculture.nl</a>
+                    <div class="nieuwe-fouten-bg">
+                        <p class="nieuwe-fouten">nieuwe fouten ontdekt</p>
+                    </div>
                 </div>
 
-                <div class="SoCbottom">
-                    
-                        <div class="nieuwe-fouten-bg">
-                            <p class="nieuwe-fouten">nieuwe fouten ontdekt</p>
-                        </div>
-                        <div>
-                            <fieldset class="progressbar">
-                                <p>
-                                    <meter min="10" max="100" low="30" high="80" value="57"></meter>
-                                </p>
-                                
-                            </fieldset>
-                        </div>
-                    </div>
+                <div style="width: fit-content;">
+                    <fieldset class="progressbar">
+                        <p>
+                            <meter id="nieuwe-fouten-meter" min="10" max="100" value="57" style="--value: 57; --breedte: 300px; --dikte-rand: 1em;"></meter>
+                        </p>
+                    </fieldset>
+                </div>
                 
 
             </article>
 
             <article class="dashNK">
-                <div class="NKtop">
-                    <img style="width: 60px;" src="NieuwekijkImg.jpg" alt="Nieuwekijk logo">
-                    <h1 id="NK">Nieuwekijk</h1>
+                <img id="NKimg" style="width: 60px;" src="NieuwekijkImg.jpg" alt="Nieuwekijk logo">
+                <div class="article-middle">
+                    <h1 id="NK"> <a href="nieuwekijk.html">Nieuwekijk</a></h1>
                     <a id="NK-link" href="https://nieuwekijk.nl/">nieuwekijk.nl</a>
+                    <div class="nieuwe-fouten-bg">
+                        <p class="nieuwe-fouten">nieuwe fouten ontdekt</p>
+                    </div>
                 </div>
-                
-                <div class="NKbottom">
-               
-                        <div class="nieuwe-fouten-bg">
-                            <p class="nieuwe-fouten">nieuwe fouten ontdekt</p>
-                        </div>
-                        <div>
-                            <fieldset class="progressbar">
-                                <p>                        
-                                    <meter min="10" max="100" low="30" high="80" value="100"></meter>
-                                </p>
-                            </fieldset>
-                        </div>
+
+                <div style="width: fit-content;">
+                    <fieldset class="progressbar">
+                        <p>
+                            <meter id="nieuwe-fouten-meter" min="10" max="100" value="57" style="--value: 57; --breedte: 300px; --dikte-rand: 1em;"></meter>
+                        </p>
+                    </fieldset>
                 </div>
             </article>
 
             <article class="dashTB">
-                <div class="TBtop">
-                    <img style="width: 60px;" src="TheBinImg.png" alt="The Bin logo">
+                <img id="TBimg" src="TheBinImg.png" alt="The Bin logo">
+                <div class="article-middle">
                     <h1 id="TB">The Bin</h1>
                     <a id="TB-link" href="https://www.thebin.nl/">thebin.nl</a>
+                    <div class="toegankelijk-bg">
+                        <p id="toegankelijk">toegankelijk</p>
+                    </div>
                 </div>
                 
-                <div class="TBbottom">
-                        <div class="toegankelijk-bg">
-                            <p id="toegankelijk">toegankelijk</p>
-                        </div>
-                        <div>
-                            <fieldset class="progressbar">
-                                <p>                        
-                                    <meter min="10" max="100" low="30" high="80" value="100"></meter>
-                                </p>
-                            </fieldset>
-                        </div>
+                <div style="width: fit-content;">
+                    <fieldset class="progressbar">
+                        <p>
+                            <meter id="toegankelijk-meter" min="10" max="100" value="100" style="--value: 57; --breedte: 300px; --dikte-rand: 1em;"></meter>
+                        </p>
+                    </fieldset>
                 </div>
             </article>
-            
+              
         </section>
+    </main>
         <footer>
             <ul class="footer-links">
                 <li class="footer-text">

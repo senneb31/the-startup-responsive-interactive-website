@@ -11,6 +11,12 @@ body{
     --first-font-color: #0257ff;
     --second-font-color: #5D666A;
     --third-font-color: #87929F;
+    --background-gray: #F0F0F0;
+    --state-green: #00C858;
+    --state-info: #0257FF;
+    --state-warning: #FF9800;
+    --state-error: #FF3819;
+
 
     /* font-size-headings */
     --font-size-xxl: 96px;
@@ -25,6 +31,9 @@ body{
     --standard-font-weight: 400;
     --semibold-font-weight: 500;
     --bold-font-weight: 600; 
+
+    font-family: "Outfit";
+    margin: 0;
 
     /*progressbar*/
     --value57: 57;
@@ -67,7 +76,7 @@ height: 32px;
 cursor: pointer; 
 margin-left: auto; }
 
-@media all and (min-width: 500px) { 
+@media all and (min-width: 1100px) { 
 
 .hamburger, .hamburger-class {
     display: none; }
@@ -202,7 +211,10 @@ meter {
         }
         &::-moz-meter-bar {
         background: none;
+
 }
+
+
 	
 	background-color:#CCE3FF;
 	
@@ -213,7 +225,7 @@ meter {
 	);
 	
 	animation-name:revealP;
-	animation-duration:.5s;
+	animation-duration:2s;
 	animation-play-state:paused;
 	animation-fill-mode:forwards
 	
@@ -238,7 +250,15 @@ meter.is-visible {
 	}
 }
 
-
+#ontoegankelijk-meter{
+    background-color: #FFDADA;
+	
+	background-image:conic-gradient(
+		
+    #FF3819 calc(var(--p) * 1%),
+		transparent 0
+	);
+}
 
 .button{
     margin: 0;
@@ -290,19 +310,22 @@ meter.is-visible {
     padding-left: 32px;
 }
 
-
+#NFLimg{
+    width: 50px;
+    padding-top: 12px;
+}
 
 .dashNFL{
+    display: grid;
+    justify-items: center;
+    gap: 16px;
     background: white;
     margin: 16px;
     border-radius: 10px;
 }
-
-.NFLtop{
-    display: flex;
-    flex-direction: column;
-    padding: 24px 0px;
-    align-items: center;
+.article-middle{
+    display: grid;
+    justify-items: center;
     gap: 8px;
 }
 
@@ -321,33 +344,24 @@ meter.is-visible {
     width: fit-content;
 }
 
-.NFLbottom{
-    display: flex;
-    justify-content: space-evenly;
-    padding: 0 16px;
-    align-items: center;
+#SoCimg{
+    width: 50px;
+    padding-top: 12px;
 }
 
 .dashSoC{
+    display: grid;
+    justify-items: center;
+    gap: 16px;
     background: white;
     margin: 16px;
     border-radius: 10px;
 }
 
-.SoCtop{
-    display: flex;
-    flex-direction: column;
-    padding: 24px 0px;
-    align-items: center;
+.article-middle{
+    display: grid;
+    justify-items: center;
     gap: 8px;
-}
-
-
-.SoCbottom{
-    display: flex;
-    justify-content: space-evenly;
-    padding: 0 16px;
-    align-items: center;
 }
 
 #SoC{
@@ -358,26 +372,18 @@ meter.is-visible {
    
 }
 
+#NKimg{
+    width: 50px;
+    padding-top: 12px;
+}
+
 .dashNK{
+    display: grid;
+    justify-items: center;
+    gap: 16px;
     background: white;
     margin: 16px;
     border-radius: 10px;
-}
-
-.NKtop{
-    display: flex;
-    flex-direction: column;
-    padding: 24px 0px;
-    gap: 8px;
-    align-items: center;
-}
-
-
-.NKbottom{
-    display: flex;
-    justify-content: space-evenly;
-    padding: 0 16px;
-    align-items: center;
 }
 
 #NK{
@@ -389,25 +395,12 @@ meter.is-visible {
 }
 
 .dashTB{
+    display: grid;
+    justify-items: center;
+    gap: 16px;
     background: white;
     margin: 16px;
     border-radius: 10px;
-}
-
-.TBtop{
-    display: flex;
-    flex-direction: column;
-    padding: 24px 0px;
-    gap: 8px;
-    align-items: center;
-}
-
-
-.TBbottom{
-    display: flex;
-    justify-content: space-evenly;
-    padding: 0 16px;
-    align-items: center;
 }
 
 #TB{
@@ -416,6 +409,11 @@ meter.is-visible {
     margin: 0;
     font-size: var(--font-size-s);      
    
+}
+
+#TBimg{
+    width: 50px;
+    padding-top: 12px;
 }
 
 .footer-links{
@@ -466,6 +464,26 @@ meter.is-visible {
     color: var(--second-font-color);
 }
 
+#nieuwe-fouten-meter{
+    background-color: #FFFAF3;
+    
+    background-image:conic-gradient(
+        
+    #FFD08A calc(var(--p) * 1%),
+        transparent 0
+    );
+}
+
+#toegankelijk-meter{
+    background-color: #BBFFD8;
+    
+    background-image:conic-gradient(
+        
+    #00C858 calc(var(--p) * 1%),
+        transparent 0
+    );
+}
+
 .toegankelijk-bg{
     background: #BBFFD8;
     height: 40px;
@@ -484,6 +502,299 @@ meter.is-visible {
     color: #00883C;
 }
 
-@media all and (min-width: 500px) {
+@media all and (min-width: 542px) {
     
+    .dashNFL{
+        height: 200px;
+        background-color: white;
+        margin: 16px;
+        border-radius: 20px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 510px;
+        padding: 0 16px 0 0;
+    }
+
+    .dashSoC{
+        height: 200px;
+        background-color: white;
+        margin: 16px;
+        border-radius: 20px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 510px;
+        padding: 0 16px 0 0;
+    }
+
+    .dashNK{
+        height: 200px;
+        background-color: white;
+        margin: 16px;
+        border-radius: 20px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 510px;
+        padding: 0 16px 0 0;
+    }
+
+    .dashTB{
+        height: 200px;
+        background-color: white;
+        margin: 16px;
+        border-radius: 20px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 510px;
+        padding: 0 16px 0 0;
+    }
+    
+    meter {
+        appearance:none;
+        width: 150px;
+        height: 150px;
+      border-radius:50%;
+      mask-image: radial-gradient(closest-side, transparent 55px, black 0);
+        
+        /* weghalen van de standaard browser styling*/
+            &::-webkit-meter-bar {
+            display: none;
+            }
+            &::-moz-meter-bar {
+            background: none;
+    
+    }
+    
+    
+        
+        background-color:#CCE3FF;
+        
+        background-image:conic-gradient(
+            
+        #0257ff calc(var(--p) * 1%),
+            transparent 0
+        );
+        
+        animation-name:revealP;
+        animation-duration:2s;
+        animation-play-state:paused;
+        animation-fill-mode:forwards
+        
+    }
+    
+    meter.is-visible {
+        animation-play-state:running;
+    }
+    
+    @property --p {
+      syntax: "<number>";
+      inherits: false;
+      initial-value: 0;
+    }
+    
+    @keyframes revealP {
+        0% {
+            --p:0;
+        }
+        100% {
+            --p:var(--value);
+        }
+    }
+    
+    .progressbar{
+        border: none;
+        padding: 8px 0 0 64px;
+    }
+    
+    #NFLimg{
+        width: 50px;
+        padding: 16px 0 0 16px;
+    }
+
+    #NFL{
+        margin: 0;
+        font-size: x-large;
+        padding: 24px 0 0 8px;
+    }
+    
+    #NFL-link{
+        padding: 0px 8px;
+    }
+
+    #ontoegankelijk{
+        margin: 0;
+        display: grid;
+        align-content: center;
+        font-weight: var(--semibold-font-weight);
+        color: #B50000;
+    }
+
+    .ontoegankelijk-bg{
+        background: #FFDADA;
+        height: 40px;
+        width: 140px;
+        display: flex;
+        align-content: flex-end;
+        justify-content: center;
+        border-radius: 20px;
+        margin-top: 2rem;
+    }
+
+    .article-middle{
+        display: grid;
+        justify-items: start;
+        gap: 0;
+    }
+
+    #SoCimg{
+        width: 50px;
+        padding: 16px 0 0 16px;
+    }
+
+    #SoC{
+        margin: 0;
+        font-size: x-large;
+        padding: 24px 0 0 8px;
+    }
+    
+    #SoC-link{
+        padding: 0px 8px;
+    }
+
+    #nieuwe-fouten{
+        margin: 0;
+        display: grid;
+        align-content: center;
+        font-weight: var(--semibold-font-weight);
+        color: #FFD08A;
+    }
+
+    .nieuwe-fouten-bg{
+        background: #FFFAF3;
+        height: 40px;
+        width: fit-content;
+        display: flex;
+        align-content: flex-end;
+        justify-content: center;
+        border-radius: 20px;
+        margin-top: 2rem;
+        padding: 0 10px;
+    }
+
+    #nieuwe-fouten-meter{
+        background-color: #FFFAF3;
+        
+        background-image:conic-gradient(
+            
+        #FFD08A calc(var(--p) * 1%),
+            transparent 0
+        );
+    }
+
+    #NKimg{
+        width: 50px;
+        padding: 16px 0 0 16px;
+    }
+
+    #NK{
+        margin: 0;
+        font-size: x-large;
+        padding: 24px 0 0 8px;
+    }
+    
+    #NK-link{
+        padding: 0px 8px;
+    }
+
+    #TBimg{
+        width: 50px;
+        padding: 16px 0 0 16px;
+    }
+
+    #TB{
+        margin: 0;
+        font-size: x-large;
+        padding: 24px 0 0 8px;
+    }
+    
+    #TB-link{
+        padding: 0px 8px;
+    }
+
+    .toegankelijk-bg{
+        background: #BBFFD8;
+        height: 40px;
+        width: fit-content;
+        display: flex;
+        align-content: flex-end;
+        justify-content: center;
+        border-radius: 20px;
+        margin-top: 2rem;
+        padding: 0 10px;
+    }
+
+    #toegankelijk-meter{
+        margin-left: 85px;
+    }
 }
+
+@media all and (min-width: 1100px) {
+    main{
+        position: absolute;
+        background: var(--background-gray);
+        left: 200px;
+        width: -webkit-fill-available;
+    }
+
+    header{
+        width: 136px;
+        height: 200px;
+        position: absolute;
+    }
+
+    #ADlogo{
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        left: 16px;
+    }
+
+    .ad-logo{
+        height: fit-content;
+        position: absolute;
+        left: 50px;
+    }
+
+    .dashboard{
+        position: absolute;
+        top: -26px;
+    }
+
+    .nieuwekijk{
+        position: absolute;
+        top: -26px;
+    }
+
+    #dashboard-list{
+        display: grid;
+        position: absolute;
+        top: 129px;
+        left: 50px;
+        align-content: space-evenly;
+        justify-items: start;
+        gap: 8px;
+    }
+
+    #nieuwekijk-list{
+        display: grid;
+        position: absolute;
+        left: 50px;
+        top: 300px;
+        gap: 8px;
+    }
+
+}
+
