@@ -163,6 +163,9 @@ a{
 
 h1{
     font-family: var(--main-font);
+    margin: 0;
+    padding: 0 32px;
+    color: var(--second-font-color);
 }
 
 h2{
@@ -278,4 +281,201 @@ meter.is-visible {
     font-size: 18px;
     color: var(--first-font-color);
     font-weight: 600;
+}
+
+.article{
+    background-color: white;
+    margin: 16px;
+    border-radius: 10px;
+    height: 160px;
+}
+
+.article2{
+    background-color: white;
+    margin: 16px;
+    border-radius: 10px;
+    height: 180px;
+}
+
+.article-over-ons{
+    background-color: white;
+    margin: 16px;
+    border-radius: 10px;
+}
+
+#toegankelijkheid{
+    font-size: var(--font-size-s);
+    color: var(--second-font-color);
+    padding: 16px 24px;
+    font-weight: var(--bold-font-weight);
+}
+
+.article-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.list{
+    display: flex;
+    gap: 3px;
+    color: var(--second-font-color);
+}
+
+#autoscan{
+    font-size: var(--font-size-s);
+    color: var(--second-font-color);
+    padding: 16px 24px 0 24px;
+    font-weight: var(--bold-font-weight);
+}
+
+#latest-scan{
+    margin: 0;
+    padding-left: 24px;
+    color: var(--second-font-color);
+}
+
+.article2-bottom{
+    padding: 16px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#article2-meter{
+    background-color: #FFE0B3;
+    background-image: conic-gradient( #FF9800 calc(var(--p)* 1%), transparent 0);
+}
+
+.h2-over-ons{
+    font-size: var(--font-size-s);
+    color: var(--second-font-color);
+    padding: 16px 24px 0 24px;
+    font-weight: var(--bold-font-weight);
+}
+
+.article-OO-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.over-ons-value{
+    margin: 0;
+    padding: 0 16px;
+    font-weight: var(--semibold-font-weight);
+    font-size: var(--font-size-s);
+}
+
+.over-ons-meter{
+    appearance:none;
+	width: -webkit-fill-available;
+	height: 6px;
+    border-radius:10px;
+    mask-image: radial-gradient(closest-side, transparent 0px, black 0);
+    background-color: #FFE0B3;
+    background-image: conic-gradient( #FF9800 calc(var(--p)* 1%), transparent 0);
+}
+
+.meter-div{
+    display: flex;
+    justify-content: center;
+    padding: 16px;
+}
+
+.over-ons-link{
+    font-size: small;
+    margin: 0;
+    padding: 0 24px;
+}
+
+.article-home{
+    background-color: white;
+    margin: 16px;
+    border-radius: 10px;
+}
+
+.article-home-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.h2-home{
+    font-size: var(--font-size-s);
+    color: var(--second-font-color);
+    padding: 16px 24px 0 24px;
+    font-weight: var(--bold-font-weight);
+}
+
+.home-value{
+    margin: 0;
+    padding: 0 16px;
+    font-weight: var(--semibold-font-weight);
+    font-size: var(--font-size-s);
+}
+
+.home-link{
+    font-size: small;
+    margin: 0;
+    padding: 0 24px;
+}
+
+.home-meter{
+    appearance:none;
+	width: -webkit-fill-available;
+	height: 6px;
+    border-radius:10px;
+    mask-image: radial-gradient(closest-side, transparent 0px, black 0);
+    background-color: #BBFFD8;
+    background-image:conic-gradient(#00C858 calc(var(--p) * 1%), transparent 0);
+}
+
+.pagina-toevoegen{
+    background-color: white;
+    margin: 16px;
+    border-radius: 10px;
+    width: -webkit-fill-available;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.h2-add-page{
+    font-size: var(--font-size-s);
+    color: var(--second-font-color);
+    font-weight: var(--semibold-font-weight);
+    padding: 0;
+}
+
+.add-page{
+    display: flex;
+    gap: 8px;
+}
+
+.footer-links{
+    display: flex;
+    justify-content: space-around;
+    padding: 16px 0;
+}
+
+.zoekbalk{
+    display: flex;
+    justify-content: center;
+}
+
+.zoekbutton{
+    border: none;
+    background: white;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.zoekbalk-input{
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    font-family: var(--main-font);
+    font-size: var(--font-size-xs);
+    color: var(--background-gray);
 }
