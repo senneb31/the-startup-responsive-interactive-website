@@ -756,6 +756,19 @@ meter.is-visible {
         position: absolute;
     }
 
+    footer{
+        position: absolute;
+        z-index: 100;
+        left: 28px;
+        bottom: 16px;
+    }
+
+    .footer-links{
+        display: grid;
+        gap: 16px;
+        padding: 0;
+    }
+
     #ADlogo{
         width: 30px;
         height: 30px;
@@ -783,7 +796,7 @@ meter.is-visible {
         display: grid;
         position: absolute;
         top: 129px;
-        left: 50px;
+        left: 28px;
         align-content: space-evenly;
         justify-items: start;
         gap: 8px;
@@ -792,7 +805,7 @@ meter.is-visible {
     #nieuwekijk-list{
         display: grid;
         position: absolute;
-        left: 50px;
+        left: 28px;
         top: 300px;
         gap: 8px;
     }

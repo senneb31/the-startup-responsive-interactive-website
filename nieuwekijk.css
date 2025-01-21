@@ -76,7 +76,7 @@ height: 32px;
 cursor: pointer; 
 margin-left: auto; }
 
-@media all and (min-width: 1100px) { 
+@media all and (min-width: 552px) { 
 
 .hamburger, .hamburger-class {
     display: none; }
@@ -287,7 +287,8 @@ meter.is-visible {
     background-color: white;
     margin: 16px;
     border-radius: 10px;
-    height: 160px;
+    height: 180px;
+    max-width: 300px;
 }
 
 .article2{
@@ -314,6 +315,7 @@ meter.is-visible {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    padding-top: 16px;
 }
 
 .list{
@@ -375,6 +377,10 @@ meter.is-visible {
     mask-image: radial-gradient(closest-side, transparent 0px, black 0);
     background-color: #FFE0B3;
     background-image: conic-gradient( #FF9800 calc(var(--p)* 1%), transparent 0);
+    animation-name:revealP;
+	animation-duration:2s;
+	animation-play-state:paused;
+	animation-fill-mode:forwards;
 }
 
 .meter-div{
@@ -429,14 +435,17 @@ meter.is-visible {
     mask-image: radial-gradient(closest-side, transparent 0px, black 0);
     background-color: #BBFFD8;
     background-image:conic-gradient(#00C858 calc(var(--p) * 1%), transparent 0);
+    animation-name:revealP;
+	animation-duration:2s;
+	animation-play-state:paused;
+	animation-fill-mode:forwards;
 }
 
 .pagina-toevoegen{
     background-color: white;
     margin: 16px;
     border-radius: 10px;
-    width: -webkit-fill-available;
-    height: 100px;
+    max-width: 400px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -478,4 +487,131 @@ meter.is-visible {
     font-family: var(--main-font);
     font-size: var(--font-size-xs);
     color: var(--background-gray);
+}
+
+@media all and (min-width: 552px) {
+    main{
+        position: absolute;
+        background: var(--background-gray);
+        left: 200px;
+        width: -webkit-fill-available;
+    }
+
+    header{
+        width: 136px;
+        height: 200px;
+        position: absolute;
+    }
+
+    #ADlogo{
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        left: 16px;
+    }
+
+    .ad-logo{
+        height: fit-content;
+        position: absolute;
+        left: 50px;
+    }
+
+    .dashboard{
+        position: absolute;
+        top: -26px;
+    }
+
+    .nieuwekijk{
+        position: absolute;
+        top: -26px;
+    }
+
+    #dashboard-list{
+        display: grid;
+        position: absolute;
+        top: 129px;
+        left: 28px;
+        align-content: space-evenly;
+        justify-items: start;
+        gap: 8px;
+    }
+
+    #nieuwekijk-list{
+        display: grid;
+        position: absolute;
+        left: 28px;
+        top: 300px;
+        gap: 8px;
+    }
+
+    .article{
+        max-width: 300px;
+    }
+
+    .article2{
+        max-width: 300px;
+    }
+
+    .article-over-ons{
+        max-width: 400px;
+    }
+
+    .article-home{
+        max-width: 400px;
+    }
+
+    .zoekbalk{
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 16px;
+    }
+
+    footer{
+        position: absolute;
+        z-index: 100;
+        left: 28px;
+        bottom: 16px;
+    }
+
+    .footer-links{
+        display: grid;
+        gap: 16px;
+        padding: 0;
+    }
+}
+
+@media all and (min-width: 850px) {
+    .articles{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .articles-top{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .article{
+        max-width: 300px;
+    }
+
+    .article2{
+        min-width: 500px;
+    }
+
+}
+
+@media all and (min-width: 1200px) {
+    .articles{
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+
+    .article{
+        max-width: 300px;
+    }
+
+    .article2{
+        max-width: none;
+    }
 }
