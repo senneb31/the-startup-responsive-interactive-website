@@ -548,10 +548,6 @@ meter.is-visible {
         max-width: 300px;
     }
 
-    .article2{
-        max-width: 300px;
-    }
-
     .article-over-ons{
         max-width: 400px;
     }
@@ -593,10 +589,6 @@ meter.is-visible {
 
     .article{
         max-width: 300px;
-    }
-
-    .article2{
-        min-width: 500px;
     }
 
 }
