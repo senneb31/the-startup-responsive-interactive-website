@@ -12,6 +12,8 @@ https://github.com/user-attachments/assets/d76833b4-48d6-4a60-b9b5-77be03e13c98
 
 
 ## Kenmerken
+De technieken die ik heb toegepast om een gestructureerde HTML te schrijven is het gebruiken van ademruimte en inspringen in de HTML. Dit wil zeggen dat ik altijd 4 spaties gebruik om duidelijk aan te geven dat er een bepaald element in een element zit. In de CSS heb ik dit ook gedaan, maar dan aan de hand van het nesten van de CSS selectors. Om de pagina er mooi uit te laten zien gebruik ik voor verschillende devices media queries. Dat wil zeggen dat de layout kan veranderen wanneer het beeldscherm een bepaalde breedt heeft. Zo komt mijn website er op elk device mooi uit te zien. 
+
 Voor de interactie heb ik een meter element aangemaakt voor de prgressbar. Deze heb ik in CSS gestyled naar een cirkel en d.m.v. keyframes heb ik de opvul animatie aangemaakt. In JS heb ik ervoor gezorgd dat de animatie wordt ingezet als je door de website scrolt. De animatie begint pas wanneer de prgressbar in beeld komt.
 
 HTML:
