@@ -205,33 +205,29 @@ meter {
 	appearance:none;
 	width: 80px;
 	height: 80px;
-  border-radius:50%;
-  mask-image: radial-gradient(closest-side, transparent 28px, black 0);
-	
-    /* weghalen van de standaard browser styling*/
-        &::-webkit-meter-bar {
-        display: none;
-        }
-        &::-moz-meter-bar {
-        background: none;
+    border-radius:50%;
+    mask-image: radial-gradient(closest-side, transparent 28px, black 0);
 
-}
+    background-color:#CCE3FF;
 
+    background-image:conic-gradient(
 
-	
-	background-color:#CCE3FF;
-	
-	background-image:conic-gradient(
-		
     #0257ff calc(var(--p) * 1%),
-		transparent 0
-	);
-	
-	animation-name:revealP;
-	animation-duration:2s;
-	animation-play-state:paused;
-	animation-fill-mode:forwards
-	
+        transparent 0
+    );
+
+    animation-name:revealP;
+    animation-duration:2s;
+    animation-play-state:paused;
+    animation-fill-mode:forwards;
+    /* weghalen van de standaard browser styling*/
+        
+    &::-webkit-meter-bar {
+        display: none;
+    }
+    &::-moz-meter-bar {
+        background: none;
+    }
 }
 
 meter.is-visible {
