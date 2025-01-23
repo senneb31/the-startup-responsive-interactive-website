@@ -186,6 +186,7 @@ ul{
 li{
     font-family: var(--main-font);
     list-style-type: none;
+    color: var(--second-font-color);
 }
 
 header{
@@ -279,7 +280,7 @@ meter.is-visible {
 }
 
 .ad-logo{
-    color: var(--first-font-color);
+    color: #0275FF;
     display: flex;
     align-items: center;
     position: relative;
@@ -291,7 +292,7 @@ meter.is-visible {
     position: absolute;
     top: 90px;
     font-size: 18px;
-    color: var(--first-font-color);
+    color: #0275FF;
     font-weight: 600;
 }
 
@@ -299,7 +300,7 @@ meter.is-visible {
     position: absolute;
     top: 340px;
     font-size: 18px;
-    color: var(--first-font-color);
+    color: #0275FF;
     font-weight: 600;
 }
 

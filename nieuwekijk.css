@@ -189,6 +189,7 @@ ul{
 li{
     font-family: var(--main-font);
     list-style-type: none;
+    color: var(--second-font-color);
 }
 
 header{
@@ -334,15 +335,73 @@ meter.is-visible {
 }
 
 .article2-bottom{
-    padding: 16px 0;
+    padding: 16px 32px;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: flex-start;
+    gap: 32px;
 }
 
-#article2-meter{
+#ontoegankelijk-meter{
     background-color: #FFE0B3;
     background-image: conic-gradient( #FF9800 calc(var(--p)* 1%), transparent 0);
+}
+
+.zoek-en-filters{
+    display: grid;
+    justify-content: start;
+    justify-items: start;
+    gap: 16px;
+    padding-left: 16px;
+}
+
+.voldoet-niet{
+    background: #0275FF;
+    color: #CCE3FF;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    height: 30px;
+    padding: 0 8px;
+}
+
+.voldoet{
+    color: #0275FF;
+    background: #CCE3FF;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    height: 30px;
+    padding: 0 8px;
+}
+
+.div-a{
+    background: #0275FF;
+    color: #CCE3FF;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    height: 30px;
+    padding: 0 8px;
+}
+
+.pagina-plus{
+    display: flex;
+    color: #CCE3FF;
+    background: #0275FF;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    height: 30px;
+    gap: 8px;
+    padding: 0 8px;
 }
 
 .h2-over-ons{
@@ -372,7 +431,7 @@ meter.is-visible {
     border-radius:10px;
     mask-image: radial-gradient(closest-side, transparent 0px, black 0);
     background-color: #FFE0B3;
-    background-image: conic-gradient( #FF9800 calc(var(--p)* 1%), transparent 0);
+    background-image:linear-gradient(to right,#FF9800  calc(var(--p) * 1%),transparent 0);
     animation-name:revealP;
 	animation-duration:2s;
 	animation-play-state:paused;
@@ -430,7 +489,7 @@ meter.is-visible {
     border-radius:10px;
     mask-image: radial-gradient(closest-side, transparent 0px, black 0);
     background-color: #BBFFD8;
-    background-image:conic-gradient(#00C858 calc(var(--p) * 1%), transparent 0);
+    background-image:linear-gradient(to right,#00C858 calc(var(--p) * 1%), transparent 0);
     animation-name:revealP;
 	animation-duration:2s;
 	animation-play-state:paused;
@@ -578,10 +637,6 @@ meter.is-visible {
         grid-template-columns: auto auto;
     }
 
-    .articles-top{
-        display: grid;
-        grid-template-columns: auto auto;
-    }
 
     .article{
         max-width: 300px;
@@ -590,9 +645,15 @@ meter.is-visible {
 }
 
 @media all and (min-width: 1200px) {
+
     .articles{
         display: grid;
         grid-template-columns: auto auto auto;
+    }
+
+    .articles-top{
+        display: grid;
+        grid-template-columns: 25% 75%;
     }
 
     .article{
@@ -601,5 +662,9 @@ meter.is-visible {
 
     .article2{
         max-width: none;
+    }
+
+    .zoek-en-filters{
+        display: flex;
     }
 }
